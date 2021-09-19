@@ -1,5 +1,5 @@
-## Mercado Digital Front-End
-Front-End de [Mercado Digital](https://mercadodigital.me/).
+# TiendaOnline Front-End
+Frontend for an eCommerce store created using ReactJs⚛️: practice project using styled components, material ui.
 
 # Getting Started
 
@@ -14,4 +14,4 @@ The app runs on port 3000 for default
 
 ### `npm run build`
 
-Copyright © 2021 Mercado Digital. All right reserved
+
