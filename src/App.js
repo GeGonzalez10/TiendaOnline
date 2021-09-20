@@ -7,11 +7,14 @@ import 'react-toastify/dist/ReactToastify.css';
 
 //Components
 import Navbar from './pages/components/navbar';
+import Products from './pages/components/products';
 import Sidebar from './pages/components/sidebar';
 import UserBar from './pages/components/userbar';
 import Register from './pages/register/register';
 import Login from './pages/login/login';
 import Adviser from './pages/adviserForm/adviser';
+
+import Home from './pages/home/home';
 
 import Logout from './pages/components/logout';
 //Api
@@ -50,16 +53,16 @@ function App() {
 	  	<div>
 			<Sidebar />
 		</div>
-	    <Route exact path="/">
-	      <Redirect to="/register"/>
-	    </Route>
+	      <Redirect to="/Home"/>
+	    <Route exact path="/Home" component={Home}/>
 	    {/* Here goes register*/}
-	    <Route exact path="/register" component={Register}/>
+	    <Route exact path="/Register" component={Register}/>
 	    {/* Here goes login*/}
-	    <Route exact path="/login" component={Login}/>
-	    <Route exact path="/dashboard" component={Adviser}/>
-	    <Route exact path="/logout" component={Logout}/>
-
+	    <Route exact path="/Login" component={Login}/>
+	    <Route exact path="/Dashboard" component={Adviser}/>
+	    <Route exact path="/Logout" component={Logout}/>
+		{/* Here goes products*/}
+		<Route exact path="/Products" component={Products}/>
 	  </div>
 	</Switch>
 

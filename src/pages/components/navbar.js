@@ -72,7 +72,7 @@ const NavBar = ({ history, location})=>{
     <Nav>
       {/*<Logo/>*/}
       <Link {...{
-	to:"/"
+	to:"/Home"
       }}>
 	<H4 {...{
 	  fontWeight:"700"
